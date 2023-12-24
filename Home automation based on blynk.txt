@@ -1,0 +1,51 @@
+   Home Automation System with Blynk
+   
+   This code implements a home automation system controlled by the Blynk app.
+   It includes features such as temperature control, light control, water tank monitoring, and more.
+   
+   Components:
+   - Arduino with Ethernet Shield
+   - LDR Sensor
+   - Temperature Sensor
+   - Water Tank with Serial Communication
+   - Liquid Crystal Display (I2C)
+   
+   Libraries Used:
+   - Blynk
+   - LiquidCrystal_I2C
+   
+   Pinout:
+   - LDR Sensor: A1
+   - Garden Light Control: Pin 3
+   - Temperature Sensor: A0
+   - Heater Control: Pin 5
+   - Cooler Control: Pin 4
+   
+   
+   Notes:
+   - Connect the Arduino to your Blynk app using the generated authentication token.
+   - Use the Blynk app to control and monitor the home automation system.
+   
+   Functions:
+   - void init_ldr(): Initializes LDR sensor and garden light control pin.
+   - void brightness_control(): Adjusts garden light brightness based on LDR input.
+   - void init_serial_tank(): Initializes communication with the Serial Tank.
+   - unsigned int volume(): Reads and returns the water volume from the Serial Tank.
+   - void enable_inlet(): Enables the water inlet valve of the Serial Tank.
+   - void disable_inlet(): Disables the water inlet valve of the Serial Tank.
+   - void enable_outlet(): Enables the water outlet valve of the Serial Tank.
+   - void disable_outlet(): Disables the water outlet valve of the Serial Tank.
+   - void init_temperature_system(): Initializes temperature control system.
+   - float read_temperature(): Reads and returns temperature from the sensor.
+   - void cooler_control(bool control): Controls the cooler based on the input state.
+   - void heater_control(bool control): Controls the heater based on the input state.
+   - void init_lcd(): Initializes the LCD display.
+   - void update_lcd_temperature(float temperature): Updates the LCD with temperature value.
+   - void update_lcd_tank_volume(unsigned int volume): Updates the LCD with water volume.
+   - void update_lcd_cooler_status(bool isOn): Updates the LCD with cooler status.
+   - void update_lcd_heater_status(bool isOn): Updates the LCD with heater status.
+   - void update_lcd_inlet_status(bool isOn): Updates the LCD with inlet valve status.
+   - void update_lcd_outlet_status(bool isOn): Updates the LCD with outlet valve status.
+   - void handle_temp(): Checks temperature and controls heater accordingly.
+   - void handle_tank(): Monitors water volume and controls inlet valve.
+
