@@ -1,6 +1,6 @@
 /*
 Title         :   Home automation based on blynk
-Submitted By  :   Shilpi Maity
+Submitted By  :   Charushila Chakraborty
 Date          :   15.10.2023
 Description   :   To control light's brigntness with ldr sensor , monitor temperature , monitor water level in the tank through blynk app
 Pheripherals  :   Arduino UNO , Temperature system, LED, LDR module, Serial Tank, Blynk cloud, Blynk App.
